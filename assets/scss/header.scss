@@ -1,0 +1,107 @@
+.header {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 769px;
+    color: #48555b;
+    &__content {
+        text-align: center;
+    }
+    &__title {
+        text-transform: uppercase;
+        padding-top: 320px;
+        font-family: "Bebas Neue", cursive;
+        color: #fff;
+        margin: 0;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 70px;
+        letter-spacing: 6px;
+    }
+    &__subtitle {
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-bottom: 221px;
+    }
+    &__bottom {
+        text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 3.7px;
+    }
+    &__img {
+        margin-top: 42px;
+    }
+}
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    // margin-bottom: 57px;
+    &__logo {
+        position: relative;
+        z-index: 3;
+    }
+    &__inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+    }
+    &__burger {
+        display: none;
+    }
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #646F75;
+    z-index: 2;
+}
+
+.menu {
+    &__list {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        &-link {
+            text-transform: uppercase;
+            font-family: "Open Sans", sans-serif;
+            color: #fff;
+            margin: 0;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            letter-spacing: 1px;
+        }
+        &-link:hover {
+            color: #00A4E5;
+        }
+    }
+    &__item {
+        list-style-type: none;
+        margin: 0 24px;
+    }
+    &__item:nth-child(5) {
+        margin-left: 24px;
+        margin-right: 0;
+    }
+}

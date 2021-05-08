@@ -1,0 +1,101 @@
+.footer {
+    &__top {
+        background-color: #171819;
+    }
+    &__inner {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: space-between;
+    }
+    &__email {
+        width: 250px;
+        height: 40px;
+    }
+    &__email::placeholder {
+        padding-left: 16px;
+    }
+    &__bottom {
+        text-align: center;
+        background-color: #171819;
+    }
+    &__copy {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.8px;
+        color: #fff;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+    &__button {
+        padding-left: 48px;
+        padding-right: 49px;
+        padding-top: 12px;
+        padding-bottom: 10.5px;
+        float: right;
+        transition: all .5s;
+        border: none;
+    }
+    &__button:hover {
+        transform: scale(1);
+        background-color: #DBE4FF;
+        color: #48555B;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 30px;
+        color: #fff;
+        letter-spacing: 1px;
+        margin-right: 70px;
+    }
+    &__center {
+        background-color: #141A20;
+    }
+    &__p {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.8px;
+        color: #fff;
+    }
+    &__text {
+        margin-top: 16px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.8px;
+        color: #A6A9AB;
+        margin-bottom: 0;
+    }
+    &__left {
+        max-width: 250px;
+        &-img {
+            margin-top: 20px;
+        }
+    }
+    &__middle {
+        &-text {
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0.8px;
+            color: #fff;
+        }
+    }
+    &__right {
+        position: relative;
+        &-num {
+            position: absolute;
+            top: 130px;
+        }
+        &-email {
+            position: absolute;
+            top: 185px;
+        }
+    }
+}
